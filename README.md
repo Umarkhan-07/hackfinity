@@ -1,7 +1,7 @@
 # Urban Event Intelligence Dashboard
 
 AI-powered urban event analysis dashboard for city authorities.
-Built with React + Grok AI (xAI).
+Built with React + Gemini AI.
 
 ---
 
@@ -39,12 +39,12 @@ urban-event-dashboard/
 npm install
 ```
 
-### 2. Add your Grok API key
-Open `src/api/grokApi.js` and replace:
+### 2. Add your Gemini API key
+Open `src/api/geminiApi.js` and replace:
 ```js
-const GROK_API_KEY = "your_api_key_here";
+const GEMINI_API_KEY = "your_api_key_here";
 ```
-with your actual xAI Grok API key.
+with your actual Gemini API key.
 
 ### 3. Run the app
 ```bash
