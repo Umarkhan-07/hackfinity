@@ -2,7 +2,7 @@
 // CivicAI Response System - Gemini AI Analysis Engine
 // Enhanced for urban risk intelligence and decision support
 
-const GEMINI_API_KEY = "AIzaSyDb7yJwYsWZdKTzswNacX7uyVZvt2ZSHDM";
+const GEMINI_API_KEY = "YOUR_API_KEY_HERE";
 const GEMINI_MODEL   = "gemini-1.5-flash";
 const GEMINI_URL     = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
