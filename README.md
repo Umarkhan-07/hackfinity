@@ -58,7 +58,7 @@ The app opens at `http://localhost:3000`
 
 1. Select a scenario (Traffic / Factory / Flood)
 2. Scenario events load into the table
-3. Events are sent to the Grok AI engine
+3. Events are sent to the Gemini AI engine
 4. The causal graph renders the event chain
 5. AI analysis appears with category-specific insights
 
