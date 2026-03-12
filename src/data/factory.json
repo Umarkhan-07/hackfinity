@@ -1,0 +1,22 @@
+{
+  "category": "rare",
+  "title": "Factory Accident Crisis Chain",
+  "description": "Cascading impact analysis of a rare industrial catastrophe with branching consequences across health, transport, and environment.",
+  "events": [
+    { "id": 1, "name": "Factory Accident",   "type": "cause",  "detail": "Structural failure or operational error at industrial facility" },
+    { "id": 2, "name": "Fire Outbreak",      "type": "factor", "detail": "Ignition of flammable materials triggers uncontrolled fire" },
+    { "id": 3, "name": "Road Block",         "type": "impact", "detail": "Emergency vehicles and fire brigade close surrounding roads" },
+    { "id": 4, "name": "Chemical Leak",      "type": "factor", "detail": "Hazardous substance release — chlorine / toxic gas detected" },
+    { "id": 5, "name": "Mass Casualty",      "type": "factor", "detail": "Multiple workers and civilians exposed to toxic substances" },
+    { "id": 6, "name": "Hospital Overload",  "type": "impact", "detail": "District hospital exceeds ICU capacity — mutual aid required" },
+    { "id": 7, "name": "Air Pollution",      "type": "impact", "detail": "Toxic plume spreads across 2km radius based on wind direction" }
+  ],
+  "edges": [
+    { "from": 1, "to": 2 },
+    { "from": 2, "to": 3 },
+    { "from": 1, "to": 4 },
+    { "from": 4, "to": 5 },
+    { "from": 5, "to": 6 },
+    { "from": 4, "to": 7 }
+  ]
+}

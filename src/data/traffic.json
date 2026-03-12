@@ -1,0 +1,24 @@
+{
+  "category": "frequent",
+  "title": "Traffic Congestion Root Cause Chain",
+  "description": "Root cause analysis for frequently occurring urban traffic problems caused by rainfall and infrastructure degradation.",
+  "events": [
+    { "id": 1, "name": "Heavy Rainfall",              "type": "cause",  "detail": "Prolonged heavy rainfall exceeds drainage design capacity" },
+    { "id": 2, "name": "Poor Drainage",                "type": "factor", "detail": "Clogged drains and insufficient stormwater infrastructure" },
+    { "id": 3, "name": "Waterlogging",                 "type": "factor", "detail": "Standing water accumulates on road surfaces" },
+    { "id": 4, "name": "Road Surface Damage",          "type": "factor", "detail": "Water infiltration weakens road subbase material" },
+    { "id": 5, "name": "Pothole Formation",            "type": "factor", "detail": "Surface layer collapses under vehicle load" },
+    { "id": 6, "name": "Vehicle Breakdown / Accident", "type": "factor", "detail": "Vehicles hit potholes causing damage or accidents" },
+    { "id": 7, "name": "Road Blockage",                "type": "factor", "detail": "Stalled vehicles block traffic lanes" },
+    { "id": 8, "name": "Traffic Congestion",           "type": "impact", "detail": "City-wide gridlock with cascading economic and safety impacts" }
+  ],
+  "edges": [
+    { "from": 1, "to": 2 },
+    { "from": 2, "to": 3 },
+    { "from": 3, "to": 4 },
+    { "from": 4, "to": 5 },
+    { "from": 5, "to": 6 },
+    { "from": 6, "to": 7 },
+    { "from": 7, "to": 8 }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "category": "predictive",
+  "title": "Flood Risk Cascade Prediction",
+  "description": "Predictive simulation of cascading urban flood impacts if continuous rainfall continues and no intervention occurs.",
+  "events": [
+    { "id": 1, "name": "Continuous Rainfall",       "type": "cause",  "detail": "Sustained rainfall exceeding 80mm/hr for 3+ hours" },
+    { "id": 2, "name": "River Level Rising",         "type": "factor", "detail": "Bhima River approaching 3.5m above flood stage threshold" },
+    { "id": 3, "name": "Dam Pressure Increase",      "type": "factor", "detail": "Upstream reservoir reaching 94% capacity — release imminent" },
+    { "id": 4, "name": "Water Release",              "type": "factor", "detail": "Controlled dam outflow adds 2,400 cusecs to river flow" },
+    { "id": 5, "name": "Urban Flooding",             "type": "factor", "detail": "Low-lying wards 4, 7, 9 begin inundation — 1,200 residents at risk" },
+    { "id": 6, "name": "Power Failure",              "type": "factor", "detail": "Ward 7 electrical substation submerged — district-wide outage" },
+    { "id": 7, "name": "Transportation Collapse",    "type": "factor", "detail": "All 4 major road arteries impassable — emergency access lost" },
+    { "id": 8, "name": "Mass Evacuation",            "type": "impact", "detail": "2,400+ residents require emergency evacuation within 90 minutes" }
+  ],
+  "edges": [
+    { "from": 1, "to": 2 },
+    { "from": 2, "to": 3 },
+    { "from": 3, "to": 4 },
+    { "from": 4, "to": 5 },
+    { "from": 5, "to": 6 },
+    { "from": 5, "to": 7 },
+    { "from": 6, "to": 8 },
+    { "from": 7, "to": 8 }
+  ]
+}
